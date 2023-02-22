@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "d22f9fb5-665f-4837-a6ff-6a23a8a0c654",
+		"name": "CovidApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Top Confirmed",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/top/confirmed?observation_date=2020-04-14",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"top",
+						"confirmed"
+					],
+					"query": [
+						{
+							"key": "observation_date",
+							"value": "2020-04-14"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Top Confirmed",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/top/confirmed?observation_date=2020-04-14&max_results=4",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"top",
+								"confirmed"
+							],
+							"query": [
+								{
+									"key": "observation_date",
+									"value": "2020-04-14"
+								},
+								{
+									"key": "max_results",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization, accept, origin, Cache-Control, X-Requested-With"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST, OPTIONS, GET, PUT, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Feb 2023 10:21:34 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "330"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"observation_date\": \"2020-04-14\",\n    \"countries\": [\n        {\n            \"country\": \"US\",\n            \"confirmed\": 203020,\n            \"deaths\": 10842,\n            \"recovered\": 0\n        },\n        {\n            \"country\": \"Spain\",\n            \"confirmed\": 172541,\n            \"deaths\": 18056,\n            \"recovered\": 67504\n        },\n        {\n            \"country\": \"Italy\",\n            \"confirmed\": 162488,\n            \"deaths\": 21067,\n            \"recovered\": 37130\n        },\n        {\n            \"country\": \"Germany\",\n            \"confirmed\": 131359,\n            \"deaths\": 3294,\n            \"recovered\": 68200\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}

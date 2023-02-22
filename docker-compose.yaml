@@ -1,0 +1,25 @@
+version: '3.6'
+services:
+  covid-app:
+    image: covid-app:latest
+    restart: always
+    networks:
+      - default
+    ports:
+      - "3001:3001"
+  postgres:
+    image: postgres:12-alpine
+    restart: always
+    networks:
+      - default
+    ports:
+      - 5432:5432
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+  
+volumes:
+  db_data:
