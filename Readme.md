@@ -30,3 +30,7 @@ GET http://localhost:3001/api/v1/covidapp/top/confirmed - returns the top countr
 ### Postman Collection
 
 Added the postman collection that can be used to perform the request under `/postman_collection`
+
+
+### How I did my testing
+- You can watch the recordings here https://drive.google.com/file/d/1yVFTEEFQrssrbBDt4GdfkYImSqB9zc7R/view?usp=sharing
