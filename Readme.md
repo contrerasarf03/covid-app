@@ -1,6 +1,6 @@
 ## Test Instructions
 
-## Prerequisits:
+## Prerequisites:
 
 Docker - You can install docker here:  https://www.docker.com/products/docker-desktop/
 
